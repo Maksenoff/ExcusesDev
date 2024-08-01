@@ -1,0 +1,35 @@
+{% include 'base.html.twig' %}
+
+
+{% block body %}
+    <h1 class="mt-2 mb-2 d-flex justify-content-center">Liste des Excuses</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for excuse in excuses %}
+            <tr>
+                <td>{{ excuse.id }}</td>
+                <td>{{ excuse.Nom }}</td>
+                <td>{{ excuse.Message }}</td>
+                <td><a class="ms-2 mb-2 btn btn-primary" href="{{ path('app_excuse_show', {'id': excuse.id}) }}">Afficher</a>
+                <a class="ms-2 mb-2 btn btn-warning" href="{{ path('app_excuse_edit', {'id': excuse.id}) }}">Modifier</a></td>
+            </tr>            
+    
+            
+        {% else %}
+            
+            <tr>
+                <td colspan="4">Aucune données trouvée</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>     
+    <a class="ms-2 btn btn-success" href="{{ path('app_excuse_new') }}">Créer</a>
+{% endblock %}

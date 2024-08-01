@@ -1,0 +1,11 @@
+{% include 'base.html.twig' %}
+
+{% block body %}
+    <h1 class="mt-2 mb-2 d-flex justify-content-center">Edit Excuse</h1>
+
+    {{ include('excuse/_form.html.twig', {'button_label': 'Enregistrer'}) }}
+
+    <a class="ms-2 btn btn-secondary" href="{{ path('app_excuse_index') }}">Retour</a>
+
+    {{ include('excuse/_delete_form.html.twig') }}
+{% endblock %}
