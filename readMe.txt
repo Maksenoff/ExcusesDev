@@ -20,7 +20,7 @@ Symfony, afin de lancer le serveur via la commande "Symfony server:start"
 
 Installation & Démarrage
 
-Dans un premier temps prenez la base de donnée présente dans le dossier et importer là via php Myadmin. La base de donnée s'appelle "excuse.sql" (elle permet d'avoir un nombre d'excuse déjà pré remplie). Donc vous créez une base de données qui s'appelle "excusesDev" et par la suite vous allez dans l'onglet "importer" pour importer "excuse.sql". Par la suite vous allez dans le Terminal et vous allez taper "Composer install", cela va prendre une minute ou deux.
+Dans un premier temps prenez la base de donnée présente dans le dossier et importer là via php Myadmin. La base de donnée s'appelle "excuse.sql" (elle permet d'avoir un nombre d'excuse déjà pré remplie). Donc vous créez une base de données qui s'appelle "excusesDev" et par la suite vous allez dans l'onglet "importer" pour importer "excuse.sql". Par la suite vous allez dans le Terminal sur VSCode par exemple et vous allez taper "Composer install", cela va prendre une minute ou deux.
 Une fois cela fait vous pouvez aller vérifier dans le .env que le "DATABASE_URL" est correct. Après cela vous allez pouvoir taper dans le terminal la commande "Symfony server:start".
 Vous aurez juste à prendre le lien en vert afin d'accéder à l'application.
 
